@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundop50"
+    tools:context="id.ac.kharisma.breadstoreapp.ActivityPilihRoti">
+
+    <TextView
+        android:id="@+id/txtRoti1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang1"
+        app:layout_constraintEnd_toStartOf="@+id/btnKurang1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnKurang1" />
+
+    <TextView
+        android:id="@+id/txtQty1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang1"
+        app:layout_constraintEnd_toStartOf="@+id/btnTambah1"
+        app:layout_constraintTop_toTopOf="@+id/btnTambah1" />
+
+    <TextView
+        android:id="@+id/txtHarga1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="@+id/btnTambah1"
+        app:layout_constraintStart_toStartOf="@+id/btnKurang1"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty1" />
+
+    <Button
+        android:id="@+id/btnTambah1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="Plus1"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnKurang1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:onClick="Min1"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/txtQty1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRoti2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang2"
+        app:layout_constraintEnd_toStartOf="@+id/btnKurang2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnKurang2" />
+
+    <TextView
+        android:id="@+id/txtQty2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang2"
+        app:layout_constraintEnd_toStartOf="@+id/btnTambah2"
+        app:layout_constraintTop_toTopOf="@+id/btnTambah2" />
+
+    <TextView
+        android:id="@+id/txtHarga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="@+id/btnTambah2"
+        app:layout_constraintStart_toStartOf="@+id/btnKurang2"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty2" />
+
+    <Button
+        android:id="@+id/btnTambah2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="Plus2"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnTambah1" />
+
+    <Button
+        android:id="@+id/btnKurang2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:onClick="Min2"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/txtQty2"
+        app:layout_constraintTop_toTopOf="@id/btnKurang1" />
+
+
+    <TextView
+        android:id="@+id/txtRoti3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang3"
+        app:layout_constraintEnd_toStartOf="@+id/btnKurang3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnKurang3" />
+
+    <TextView
+        android:id="@+id/txtQty3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang3"
+        app:layout_constraintEnd_toStartOf="@+id/btnTambah3"
+        app:layout_constraintTop_toTopOf="@+id/btnTambah3" />
+
+    <TextView
+        android:id="@+id/txtHarga3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="@+id/btnTambah3"
+        app:layout_constraintStart_toStartOf="@+id/btnKurang3"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty3"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnTambah3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="Plus3"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnTambah2" />
+
+    <Button
+        android:id="@+id/btnKurang3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:onClick="Min3"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/txtQty3"
+        app:layout_constraintTop_toTopOf="@id/btnKurang2" />
+
+
+    <TextView
+        android:id="@+id/txtRoti4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang4"
+        app:layout_constraintEnd_toStartOf="@+id/btnKurang4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnKurang4" />
+
+    <TextView
+        android:id="@+id/txtQty4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKurang4"
+        app:layout_constraintEnd_toStartOf="@+id/btnTambah4"
+        app:layout_constraintTop_toTopOf="@+id/btnTambah4" />
+
+    <TextView
+        android:id="@+id/txtHarga4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintEnd_toEndOf="@+id/btnTambah4"
+        app:layout_constraintStart_toStartOf="@+id/btnKurang4"
+        app:layout_constraintTop_toBottomOf="@+id/txtQty4" />
+
+    <Button
+        android:id="@+id/btnTambah4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="Plus4"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnTambah3" />
+
+    <Button
+        android:id="@+id/btnKurang4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:onClick="Min4"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/txtQty4"
+        app:layout_constraintTop_toTopOf="@id/btnKurang3" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:onClick="Update"
+        android:text="Perbaharui Keranjang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRoti4" />
+
+</android.support.constraint.ConstraintLayout>
